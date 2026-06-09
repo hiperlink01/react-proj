@@ -12,12 +12,12 @@ const Links = () => {
 
 export default function PeopleMgmt() {
       return(
-      <>
+      <div className="d-flex vh-100 overflow-hidden bg-surface">
         <Sidebar otherLinks = { <Links /> } /> 
-        <div>
+        <div className="flex-grow-1 overflow-auto p-4 bg-body">
           <Outlet/>
         </div>
-      </>
+      </div>
     );
 }
 
